@@ -5,14 +5,14 @@ const account = {
   discount: 0.1,
   orders: ["order-1", "order-2", "order-3"],
   changeDiscount(value) {
-    account.discount = value;
+    this.discount = value;
   },
   showOrders() {
-    return account.orders;
+    return this.orders;
   },
   addOrder(cost, order) {
-    account.balance -= cost;
-    account.orders.push(order);
+    this.balance -= cost;
+    this.orders.push(order);
   },
 };
 
